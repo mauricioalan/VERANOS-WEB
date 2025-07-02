@@ -1,0 +1,16 @@
+.cta-producto {
+    background-color: #757d8c; 
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.cta-producto:hover {
+    background-color: #898e96;
+    cursor: default;
+}
