@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 h1 {
     color : rgb(226, 226, 231);
@@ -29,3 +30,21 @@ ul{
     border: 3px solid black;
     width: fit-content;
 }
+=======
+.cta-producto {
+    background-color: #757d8c; 
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.cta-producto:hover {
+    background-color: #898e96;
+    cursor: default;
+}
+>>>>>>> 4414c6d588404abf3bb4a7264e2f247b59190173
