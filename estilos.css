@@ -105,3 +105,13 @@ footer a:hover {
   font-size: 3em;
   color: #00aaff;
 }
+
+.nav-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 170, 255, 0.3);
+  transition: transform 0.3s ease;
+}
