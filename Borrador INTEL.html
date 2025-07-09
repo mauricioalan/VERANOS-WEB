@@ -137,5 +137,51 @@
             <a href="https://www.linkedin.com/company/intel">LinkedIn</a>
         </p>
     </footer>
+
+    <!-- ...todo tu HTML igual hasta antes del cierre de <body> -->
+
+    <button id="btn-up" title="Volver arriba">↑</button>
+
+    <script>
+        // 1. Mensaje de bienvenida mejorado
+        window.onload = function () {
+            setTimeout(() => {
+                alert("¡Bienvenido/a a la página oficial de Intel!");
+            }, 500); // se retrasa 0.5s para mejor experiencia
+        };
+
+        // 2. Validación simple del formulario
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // evita que se envíe automáticamente
+            const nombre = document.getElementById("nombre").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensaje = document.getElementById("mensaje").value.trim();
+
+            if (!nombre || !email || !mensaje) {
+                alert("Por favor, llena todos los campos.");
+            } else {
+                alert("¡Gracias por contactarnos, " + nombre + "!");
+                form.reset(); // limpia el formulario
+            }
+        });
+
+        // 3. Botón "ir arriba"
+        const btnUp = document.getElementById("btn-up");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnUp.style.display = "block";
+            } else {
+                btnUp.style.display = "none";
+            }
+        };
+
+        btnUp.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
+
 </body>
 </html>
