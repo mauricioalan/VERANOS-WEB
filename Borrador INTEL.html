@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intel Corporation</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="intellogo.png" type="image/x-icon">
+
     <script>
         window.onload = function() {
             alert("¡Bienvenido/a a la página de Intel!");
@@ -138,22 +140,22 @@
         </p>
     </footer>
 
-    <!-- ...todo tu HTML igual hasta antes del cierre de <body> -->
+    <!-- script -->
 
     <button id="btn-up" title="Volver arriba">↑</button>
 
     <script>
-        // 1. Mensaje de bienvenida mejorado
+        // Mensaje de bbienvenida 
         window.onload = function () {
             setTimeout(() => {
                 alert("¡Bienvenido/a a la página oficial de Intel!");
-            }, 500); // se retrasa 0.5s para mejor experiencia
+            }, 500); 
         };
 
-        // 2. Validación simple del formulario
+        // form
         const form = document.querySelector("form");
         form.addEventListener("submit", function (e) {
-            e.preventDefault(); // evita que se envíe automáticamente
+            e.preventDefault(); 
             const nombre = document.getElementById("nombre").value.trim();
             const email = document.getElementById("email").value.trim();
             const mensaje = document.getElementById("mensaje").value.trim();
@@ -162,11 +164,11 @@
                 alert("Por favor, llena todos los campos.");
             } else {
                 alert("¡Gracias por contactarnos, " + nombre + "!");
-                form.reset(); // limpia el formulario
+                form.reset(); 
             }
         });
 
-        // 3. Botón "ir arriba"
+        // ir arriba
         const btnUp = document.getElementById("btn-up");
         window.onscroll = function () {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
