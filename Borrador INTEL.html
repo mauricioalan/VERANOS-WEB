@@ -1,86 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borrador</title>
+    <title>Intel Corporation</title>
     <link rel="stylesheet" href="estilos.css">
     <script>
-        
         window.onload = function() {
             alert("¡Bienvenido/a a la página de Intel!");
         };
     </script>
 </head>
 <body>
-    <h1> Intel Corporation</h1>
     <header>
-        <div>
-
+        <div class="logo">
+            <h1>Intel Corporation</h1>
             <p>Innovación en cada procesador</p>
         </div>
-        
-
         <nav>
             <ul>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#soluciones">Soluciones</a></li>
                 <li><a href="#investigacion">Investigación</a></li>
+                <li><a href="#testimonios">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#soporte">Soporte</a></li>
             </ul>
         </nav>
     </header>
 
-
     <main>
+        <section id="inicio">
+            <h2 class="titulo">Bienvenido a Intel</h2>
+            <p>Intel es líder mundial en innovación y desarrollo de tecnologías que transforman el modo en que vivimos y trabajamos.</p>
+            <img src="https://logos-world.net/wp-content/uploads/2021/09/Intel-Symbol.png" alt="logo de Intel" class="nav-img" width="600">
+            <p>Descubre nuestra historia, visión y los productos que han revolucionado la industria.</p>
+        </section>
+
         <section id="productos">
             <h2>Productos de Intel</h2>
-            <p>Descubre los productos más avanzados de Intel, desde procesadores hasta soluciones de inteligencia artificial.</p>
+            <p>Explora nuestra gama de productos que van desde procesadores hasta tecnologías avanzadas de almacenamiento.</p>
+            <img src="https://en.shiftdelete.net/wp-content/uploads/2024/10/intel-yapay-zekali-intel-core-ultra-200s-islemciler-1.jpg" alt="Procesador Intel de última generación" class="nav-img" width="400">
             <ul>
-                <li>Procesadores Intel Core</li>
-                <li>Tarjetas gráficas Intel Xe</li>
-                <li>Placas base y chipsets</li>
-                <li>Intel Optane</li>
+                <li>Procesadores Intel Core i3, i5, i7, i9</li>
+                <li>Gráficos Intel Arc y Xe</li>
+                <li>Memoria Intel Optane</li>
+                <li>Unidades SSD NVMe</li>
+                <li>Intel NUC (mini PC)</li>
             </ul>
         </section>
 
         <section id="soluciones">
             <h2>Soluciones Empresariales</h2>
-            <p>Intel ofrece soluciones personalizadas para empresas, desde servidores hasta plataformas de inteligencia artificial.</p>
-            <ul>
-                <li>Soluciones para Data Centers</li>
-                <li>Computación en la nube</li>
-                <li>Inteligencia artificial</li>
-            </ul>
+            <p>Intel ofrece soluciones escalables para empresas de todos los tamaños, centradas en rendimiento, seguridad y eficiencia.</p>
+            <article>
+                <h3>Data Centers</h3>
+                <p>Infraestructura potente para grandes volúmenes de datos.</p>
+            </article>
+            <article>
+                <h3>Edge Computing</h3>
+                <p>Procesamiento en el borde para mejorar la velocidad de respuesta.</p>
+            </article>
+            <article>
+                <h3>IA y Machine Learning</h3>
+                <p>Plataformas optimizadas para el entrenamiento y despliegue de modelos de inteligencia artificial.</p>
+            </article>
         </section>
 
         <section id="investigacion">
             <h2>Investigación y Desarrollo</h2>
-            <p>Intel está a la vanguardia de la investigación tecnológica. Conoce nuestros avances en la industria de semiconductores.</p>
-            <p>Innovaciones recientes incluyen:</p>
+            <p>Estamos comprometidos con el futuro tecnológico del mundo. Nuestras áreas de investigación incluyen:</p>
             <ul>
-                <li>Microarquitectura de 10nm</li>
-                <li>Investigación sobre computación cuántica</li>
-                <li>Desarrollo de nuevos chips para IA</li>
+                <li>Computación cuántica</li>
+                <li>Microarquitecturas avanzadas</li>
+                <li>Chips neuromórficos</li>
+                <li>Nanotecnología aplicada a semiconductores</li>
             </ul>
         </section>
 
+        <section id="testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <img src="https://img.freepik.com/foto-gratis/personas-jovenes-inteligentes-estan-usando-gadgets-sonriendo-mientras-estudian_2221-367.jpg?w=1060" alt="Clientes satisfechos de Intel" class="nav-img" width="400">
+            <blockquote>
+                “Gracias a los procesadores Intel, nuestra empresa ha mejorado el rendimiento de sus servidores en un 60%.” – Tecnología Corporativa S.A.
+            </blockquote>
+            <blockquote>
+                “La calidad de los productos Intel se nota en cada detalle. Nuestra experiencia como desarrolladores ha sido excelente.” – Innovadores TI
+            </blockquote>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
         <section id="soporte">
-            <h2>Soporte al Cliente</h2>
-            <p>¿Necesitas ayuda?</p>
+            <h2>Soporte Técnico</h2>
+            <p>¿Tienes dudas o necesitas ayuda? Nuestro equipo de soporte está disponible 24/7 para asistirte.</p>
             <ul>
                 <li><a href="https://www.intel.com/support">Centro de soporte</a></li>
-                <li><a href="https://www.intel.com/drivers">Descargar controladores</a></li>
-                <li><a href="https://www.intel.com/contact">Contacto</a></li>
+                <li><a href="https://www.intel.com/drivers">Descarga de drivers</a></li>
+                <li><a href="https://www.intel.com/contact">Atención al cliente</a></li>
             </ul>
         </section>
     </main>
 
-    
+    <aside>
+        <section>
+            <h3>Noticias recientes</h3>
+            <ul>
+                <li>Intel lanza procesadores de 14ª generación</li>
+                <li>Avances en computación cuántica presentados en CES</li>
+                <li>Nuevo centro de datos en México impulsado por IA</li>
+            </ul>
+        </section>
+    </aside>
+
     <footer>
         <p>&copy; 2025 Intel Corporation. Todos los derechos reservados.</p>
-        <p><a href="https://www.intel.com/privacy">Política de privacidad</a></p>
-        <p><a href="https://www.intel.com/terms">Términos de uso</a></p>
+        <p><a href="https://www.intel.com/privacy">Política de privacidad</a> | <a href="https://www.intel.com/terms">Términos de uso</a></p>
+        <p>Síguenos en:
+            <a href="https://www.facebook.com/Intel">Facebook</a>,
+            <a href="https://www.twitter.com/Intel">Twitter</a>,
+            <a href="https://www.linkedin.com/company/intel">LinkedIn</a>
+        </p>
     </footer>
 </body>
 </html>
