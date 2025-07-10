@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intel Corporation</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="intellogo.png" type="image/x-icon">
+    <link rel="icon" href="intellogo.png" type="image/x-icon"> <!--logo de la pestaña-->
 
     <script>
         window.onload = function() {
-            alert("¡Bienvenido/a a la página de Intel!");
+            alert("¡Bienvenido/a a la página de Intel!"); //promt de la ventana //
         };
     </script>
 </head>
@@ -86,14 +86,14 @@
             <img src="https://img.freepik.com/foto-gratis/personas-jovenes-inteligentes-estan-usando-gadgets-sonriendo-mientras-estudian_2221-367.jpg?w=1060" alt="Clientes satisfechos de Intel" class="nav-img" width="400">
             <blockquote>
                 “Gracias a los procesadores Intel, nuestra empresa ha mejorado el rendimiento de sus servidores en un 60%.” – Tecnología Corporativa S.A.
-            </blockquote>
+            </blockquote> <!--cita-->
             <blockquote>
                 “La calidad de los productos Intel se nota en cada detalle. Nuestra experiencia como desarrolladores ha sido excelente.” – Innovadores TI
             </blockquote>
         </section>
 
         <section id="contacto">
-            <h2>Contáctanos</h2>
+            <h2>Contáctanos</h2> <!--formulario-->
             <form action="#" method="post">
                 <label for="nombre">Nombre completo:</label><br>
                 <input type="text" id="nombre" name="nombre" required><br>
@@ -140,7 +140,7 @@
         </p>
     </footer>
 
-    <!-- script -->
+    <!-- define boton hacia arriba-->
 
     <button id="btn-up" title="Volver arriba">↑</button>
 
@@ -168,7 +168,7 @@
             }
         });
 
-        // ir arriba
+        // usa ir arriba
         const btnUp = document.getElementById("btn-up");
         window.onscroll = function () {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -177,10 +177,10 @@
                 btnUp.style.display = "none";
             }
         };
-
+        
         btnUp.addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+        }); // fin boton
     </script>
 </body>
 </html>
