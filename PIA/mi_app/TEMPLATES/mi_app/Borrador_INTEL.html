@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intel Corporation</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="{% static 'mi_app2/Estilos.css' %}">
     <link rel="icon" href="intellogo.png" type="image/x-icon"> <!--logo de la pestaña-->
 
     <script>
@@ -28,6 +29,7 @@
                 <li><a href="#testimonios">Clientes</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#soporte">Soporte</a></li>
+                <li><a href="#ubicacion">Ubicacion</a></li>
             </ul>
         </nav>
     </header>
@@ -129,6 +131,19 @@
             </ul>
         </section>
     </aside>
+
+    <section id = ubicacion>
+        <h2>Ubicacion de Intel en Mexico</h2>
+        <a href="https://maps.app.goo.gl/KNreexoTYScFkTdS6" tarjet = "_blank">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687326.0373942954!2d-105.66545624399744!3d21.53199917080734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a95aa98ad837%3A0x906f09a5e41a7f33!2sIntel!5e0!3m2!1ses!2smx!4v1752204985205!5m2!1ses!2smx" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"> </iframe>
+        </a>
+    </section>
 
     <footer>
         <p>&copy; 2025 Intel Corporation. Todos los derechos reservados.</p>
